@@ -54,7 +54,7 @@
 - Clustering in Node JS
 - Cryptography in Node.JS
 - Other Node Performance Optimization Techniques
-- Testing Frameworks - Node, Mocha
+- Testing Frameworks - Jest, Chai, Mocha
 
 # TypeScript Topics
 

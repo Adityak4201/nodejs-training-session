@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short Circuiting</title>
+  </head>
+  <body></body>
+  <script>
+    const a = null;
+    if (a.name) {
+      console.log("Hello");
+    } else {
+      console.log("World");
+    }
+
+    function test() {
+      console.log("Inside test");
+    }
+  </script>
+</html>
