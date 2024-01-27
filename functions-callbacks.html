@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions & Callbacks</title>
+  </head>
+  <body>
+    <h1>Functions & Callbacks</h1>
+    <p>
+      Functions are first class citizens in JavaScript i.e. functions are
+      treated as variables
+    </p>
+    <p>Functions can be passed as arguments to other functions</p>
+    <p>Functions can be returned from other functions</p>
+    <p>Functions can be assigned to variables</p>
+    <p>Functions can be stored in data structures like arrays, objects, etc.</p>
+    <p>Functions can be created at runtime.</p>
+  </body>
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+    function sub(a, b) {
+      return a - b;
+    }
+    function mul(a, b) {
+      return a * b;
+    }
+    function div(a, b) {
+      return a / b;
+    }
+    function calculator(a, b, callback) {
+      return callback(a, b);
+    }
+    console.log(add(10, 20));
+    console.log(sub(10, 20));
+    console.log(mul(10, 20));
+    console.log(div(10, 20));
+    console.log(calculator(10, 20, add));
+    console.log(calculator(10, 20, sub));
+    console.log(calculator(10, 20, mul));
+    console.log(calculator(10, 20, div));
+    console.log(
+      calculator(10, 20, function (a, b) {
+        return a + b + 1;
+      })
+    );
+  </script>
+</html>

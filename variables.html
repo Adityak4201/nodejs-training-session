@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body></body>
+  <script>
+    a = 7; // Scope??
+  </script>
+  <script>
+    var b;
+    function test() {
+      console.log("before, c=" + c);
+      c = 10;
+      console.log("after, c =" + c);
+      var c;
+    }
+    console.log("c outside function=" + c);
+    if (true) {
+      var c = 5;
+    }
+    console.log("c outside if=" + c);
+    d = 10;
+    debugger;
+    test()
+
+    var d;
+
+    console.log(myVar);
+    console.log(myLet);
+    console.log(myConst);
+
+    var myVar = 'var';
+    let myLet = 'let';
+    const myConst = 'const';
+  </script>
+</html>
