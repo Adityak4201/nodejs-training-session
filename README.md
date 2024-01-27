@@ -25,7 +25,7 @@
 - ES6 updates
 - == vs ===
 - Call stack
-- Event loop
+- Event loop - [What the heck is the event loop anyway? | Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ&t=488s&ab_channel=JSConf)
 - Heap memory and garbage collection
 
 # NodeJS Topics
