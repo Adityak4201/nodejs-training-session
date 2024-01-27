@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIFEs and Anonymous Functions</title>
+  </head>
+  <body></body>
+  <script>
+    // IIFE
+    (function a() {
+      var aName = "Barry";
+      console.log(aName);
+    })();
+
+    // Anonymous Function
+    function newFunction(a, b, cb) {
+      var result = a + b;
+      cb(result);
+    }
+    newFunction(1, 2, () => {
+      console.log("I am a callback and anonymous function");
+    });
+    setTimeout(function () {
+      console.log("I am a callback and anonymous function");
+    }, 1000);
+  </script>
+</html>
