@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Updates</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const arr1 = ["a", "b", "c"];
+    const arr2 = ["d", "e", "f"];
+    const arr3 = [...arr1, ...arr2];
+    console.log(arr3);
+
+    function sum(a, b, ...rest) {
+        console.log(a, b, rest);
+    }
+
+    sum(1, 2, 3, 4, 5);
+
+    for (const [index, value] of arr3.entries()) {
+        console.log(index, value);
+    }
+
+    const obj1 = {
+        name: "Barry",
+        age: 25
+    };
+
+    const objMap = new Map([
+        ["name", "Barry"],
+        ["age", 25]
+    ]);
+
+    const objSet = new Set([
+        "Barry",
+        25
+    ]);
+    objSet.add("Allen").add(26);
+    
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        greet() {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
+    }
+
+    const barry = new Person("Barry", 25);
+    barry.greet();
+
+    let promise = new promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Done");
+        }, 1500);
+    });
+
+    promise.then(value => {
+        console.log(value);
+    }).catch(error => {
+        console.log(error);
+    }).finally(() => {
+        console.log("Finally");
+    });
+
+</script>
+</html>
