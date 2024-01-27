@@ -14,7 +14,7 @@
 
 - Hoisting
 - Closure
-- Mutation in object - [Memory Management Complete Guide](https://codedamn.com/news/javascript/memory-management-complete-guide), [Simple Explanation of Objects and Memory References in JavaScript](https://medium.com/dev-proto/simple-explanation-of-objects-and-memory-references-in-javascript-1b2310c36c31)
+- Mutation in object - [Memory Management Complete Guide](https://codedamn.com/news/javascript/memory-management-complete-guide), [Simple Explanation of Objects and Memory References in JavaScript](https://medium.com/dev-proto/simple-explanation-of-objects-and-memory-references-in-javascript-1b2310c36c31), [Arrays, Objects and Mutations](https://medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa)
 - IIFEs, anonymous functions
 - Callback hell
 - Logical operators and short circuiting

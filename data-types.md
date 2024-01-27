@@ -15,3 +15,8 @@ Non-primitive data types include:
 
 - Object: represents a collection of key-value pairs.
 - Array: represents an ordered list of values.
+
+## Mutation
+
+- An immutable value is one that, once created, can never be changed. Mutation is the change in the original code or data
+- Primitive Data types are immutable while non-primitives are mutable.
