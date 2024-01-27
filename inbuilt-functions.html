@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbuilt Functions</title>
+  </head>
+  <body></body>
+  <script>
+    const arr = [1, 2, 3, 4, 5];
+
+    const newArr = arr.map((value, index) => {
+      return value * 2;
+    });
+    const newArr2 = arr.filter((value, index) => {
+      return value > 2;
+    });
+    const newArr3 = arr.reduce((prevValue, currValue) => {
+      return prevValue + currValue;
+    }, 0);
+    console.log(newArr, newArr2, newArr3);
+
+    const arr1 = [
+      { age: 10, person: "Ram" },
+      { age: 20, person: "Shyam" },
+      { age: 30, person: "Hari" },
+    ];
+    arr1.forEach((value, index) => {
+      console.log(value, index);
+    });
+
+    for (const arrElement of arr1) {
+      console.log(arrElement.age, arrElement.person);
+    }
+
+    const find1 = arr1.find((value, index) => {
+      return value.age === 20;
+    });
+
+    const find2 = arr1.findIndex((value, index) => {
+      return value.age === 20;
+    });
+    console.log(find1, find2);
+
+    const arr2 = [1, 2, 3, 4, 5];
+    const arr3 = arr2.slice(1, 3);
+    console.log(arr3, arr2);
+
+    const arr4 = [1, 2, 3, 4, 5];
+    const arr5 = arr4.splice(1, 3);
+    console.log(arr5, arr4);
+
+    // Some mathematical functions
+    Math.max(1, 2, 3, 4, 5);
+    Math.min(1, 2, 3, 4, 5);
+    const random = Math.random(); // 0 to 1
+    const abs = Math.abs(-1);
+
+    const numStr = "10.7";
+    const num = parseInt(numStr);
+    const num2 = parseFloat(numStr);
+    console.log(num, num2);
+
+    const str = "Hello World";
+    const str2 = str.toUpperCase();
+    const str3 = str.toLowerCase();
+    console.log(str2, str3);
+    console.log(arr2.join(" "));
+    console.log(arr3.toString());
+  </script>
+</html>
