@@ -57,3 +57,9 @@ The body of an HTTP request can be sent in various formats depending on the natu
 4. **Text**: Plain text can also be sent to a server. The `Content-Type` header is set to `text/plain`.
 
 5. **URL Encoded**: URL encoding, also known as percent-encoding, is a mechanism for encoding information in a URI. In the context of HTTP requests, when the `Content-Type` header is set to `application/x-www-form-urlencoded`, the body of the HTTP request is sent as a long query string. The key-value pairs are separated by `&`, and the `=` character is used to separate the keys from the values. Spaces are replaced by `+` or `%20`, and special characters are percent-encoded.
+
+## JSON (JavaScript Object Notation)
+
+JSON is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. 
+
+JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including  C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language. JSON is often used when data is sent from a server to a web page. It's used to transmit data between a server and a web application, serving as an alternative to XML.
