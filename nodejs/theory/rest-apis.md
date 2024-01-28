@@ -40,3 +40,7 @@ Authentication is a crucial part of most RESTful APIs. Here are some common meth
 3. **JWT (JSON Web Token)**: This is a standard for token-based authentication. In this scheme, the server generates a token that certifies the user identity, and sends it to the client. The client will send the token back to the server for every subsequent request, so the server knows that the request comes from a particular identity.
 
 4. **OAuth**: This is a standard for access delegation. It provides client applications a 'secure delegated access' to server resources on behalf of a resource owner.
+
+## Idempotency
+
+[Idempotent Rest APIs](https://restfulapi.net/idempotent-rest-apis/)

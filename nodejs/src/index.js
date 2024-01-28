@@ -1,11 +1,29 @@
-import http from "http";
+import express from "express";
+import { Worker } from "worker_threads";
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Hello World! This is a Node.js app");
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+
+app.get("/health", async (req, res) => {
+  res.send("Server is up and running");
 });
 
-server.listen(3000, () => {
-  console.log("Server is listening on port 3000");
+app.get("/test", async (req, res) => {
+  console.log("Test endpoint");
+  const worker = new Worker("./src/worker.js");
+  worker.on("message", (data) => {
+    return res.status(200).json(`result is ${data}`);
+  });
+  worker.on("error", (msg) => {
+    return res.status(404).json(`An error occurred: ${msg}`);
+  });
+  // return res.status(200).json({
+  //   msg: "Test endpoint",
+  // });
+});
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });

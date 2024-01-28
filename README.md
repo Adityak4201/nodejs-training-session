@@ -8,7 +8,7 @@
 - What is node, npm and yarn?
 - Why NodeJS?
 - HTTP requests
-- Rest API basics
+- Rest API basics - [Best Practices for Rest API Design](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/)
 
 # JS Topics
 
@@ -33,7 +33,7 @@
 # NodeJS Topics
 
 - Setting up folder structure for a Node Project
-- Concept of threads
+- Concept of threads - [NodeJS Threads](https://www.digitalocean.com/community/tutorials/how-to-use-multithreading-in-node-js)
 - module.exports vs export
 - require vs import
 - NPM package.json
