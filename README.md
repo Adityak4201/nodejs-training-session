@@ -46,14 +46,14 @@
 - Working with filesystems in Node
 - Node.JS Events
 - Event Emitters and Event Targets
-- Multithreading with Node - Libuv
-- Thread Pool and OS Operations
+- Multithreading with Node - Libuv [Libuv](https://www.scaler.com/topics/nodejs/libuv/)
+- Thread Pool and OS Operations - [Thread Pool and OS Operations](https://www.scaler.com/topics/nodejs/thread-pool-and-os-operations/)
 - Worker Threads in Node.JS
 - Streams in Node.JS
-- Webstreams in Node.JS
 - Clustering in Node JS
 - Cryptography in Node.JS
 - Other Node Performance Optimization Techniques
+- Common NodeJS libraries - axios, multer, sequelize, cors, moment
 - Testing Frameworks - Jest, Chai, Mocha
 
 # TypeScript Topics
