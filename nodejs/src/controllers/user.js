@@ -1,6 +1,6 @@
 const UserController = {
   getAll: async (req, res) => {
-    console.log("Get all users");
+    console.log("Get all users", __dirname);
     return res.status(200).json({
       msg: "Get all users",
       users,
