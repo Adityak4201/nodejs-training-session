@@ -39,4 +39,6 @@ const main = async () => {
   });
 };
 
-main()
+// main();
+
+export default main;
